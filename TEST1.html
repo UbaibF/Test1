@@ -3,84 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>TEST</title>
     <style>
-    .container {
-      background-color: rgb(213, 219, 219);  
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start; 
-      padding: 20px;
-    }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .left-content {
-      flex: 2;
-    }
+        .container {
+            background-color: rgb(213, 219, 219);  
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; 
+            padding: 20px;
+        }
 
-    .right-form {
-    
-      flex-shrink: 0;
-      position: relative;
-      width: 50%;
-      height: 50%;
-    }
+        .left-content {
+            flex: 2;
+        }
 
-     .field-size {
-    width: 500px;
-  }
+        .right-form {
+            flex-shrink: 0;
+            position: relative;
+            width: 50%;
+            height: 50%;
+        }
 
-  .field-size input, textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-    box-sizing: border-box;
-  }
+        .field-size {
+            width: 500px;
+        }
 
-  .field-size button {
-    padding: 10px 20px;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
-  }
-  </style>
+        .field-size input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .field-size button {
+            padding: 10px 20px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: flex-start; 
+            padding: 5%;
+            
+        }
+
+        .icons {
+            margin-right: 10px;
+        }
+
+        .right-content {
+            flex: 1;
+            margin-left: auto;
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
         <div class="left-content">
             <p><b>Quick Connect</b></p>
-            <b><h1 style="color: black;">Leave a Message</h1></b>
-            <p>Learning to code is like solving a puzzle;<br>the more you practice, the clearer the picture becomes.</p>
+            <h1 style="color: black;">Leave a Message</h1>
+            <p>Learning to code is like solving a puzzle; the more you practice, the clearer the picture becomes.</p>
         </div>
 
         <div class="right-form">
             <form>
                 <div class="field-size">
-                <input placeholder="Your Name"></input><br>
-                <input placeholder="Your Email"></input><br>
-                <textarea for="description" rows="6" cols="20" placeholder="Your Message"></textarea><br>
-                <button>Submit</button></div>
+                    <input placeholder="Your Name" style="border-radius: 10px;" /><br>
+                    <input placeholder="Your Email" style="border-radius: 10px;" /><br>
+                    <textarea style="border-radius: 10px;" rows="6" cols="20" placeholder="Your Message"></textarea><br>
+                    <button type="submit" style="border-radius: 10px;">Submit</button>
+                </div>
             </form>
-    </div>
         </div>
+    </div>
 
-    <footer style=" background-color: black; color: white;">
-        <h1>Jessica.</h1>
-        <p>Learning to code is like solving a puzzle; the more you practice, the clearer the picture becomes.</p>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Team</li>
-            <li>Portfolio</li>
-        </ul>
-
-        <ul>
-            <b><li>Blog</li>
-            <li>Contact</li></b>
-
-        </ul>
+    <footer>
+        <div class="footer-container">
+            <div class="left-content " style="width: 100px;">
+                <h1 style="margin-bottom: 10px;">Jessica.</h1>
+                <p style="margin-bottom: 40px;">Learning to code is like solving a puzzle; the more you practice, the clearer the picture becomes.</p>
+                <i class="fab fa-skype icons"></i>
+                <i class="fab fa-twitter icons"></i>
+                <i class="fab fa-telegram-plane icons"></i>
+                <i class="fab fa-whatsapp icons"></i>
+                <i class="fab fa-github icons"></i>
+                <i class="fab fa-facebook-f icons"></i>
+                <i class="fab fa-facebook-messenger icons" style="margin-bottom: 40px;"></i>
+            </div>
+            <div class="right-content">
+                <ul style="list-style: none; padding-left: 55px;">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Portfolio</li>
+                </ul>
+            </div>
+            <ul style="list-style: none; padding-right: 45px;">
+                <b><li>Blog</li>
+                <li>Contact</li></b>
+            </ul>
+            <div>
+                <p> Just feel free to contact if you want to collaborate with me.<br> have a conversation</p>
+                <h2>contact@yourwebsite.com</h2>
+            </div>
+        </div>
+        <p>@2024 Jessica Free HTML Template by <u>Templates.Jungle.</u> Ditributed by Themewagon</p>
     </footer>
+
 </body>
 </html>
